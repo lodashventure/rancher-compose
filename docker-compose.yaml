@@ -1,0 +1,19 @@
+version: "3.7"
+services:
+  rancher:
+    image: rancher/rancher:v2.2.2
+    volumes: 
+      - ./rancher:/var/lib/rancher
+    expose:
+      - 80
+    environment:
+      - VIRTUAL_HOST=<example.com>
+      - LETSENCRYPT_HOST=<example.com>
+      - LETSENCRYPT_EMAIL=<example@gmail.com>
+    restart: unless-stopped
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
+
