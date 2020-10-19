@@ -1,7 +1,7 @@
 version: "3.7"
 services:
   rancher:
-    image: rancher/rancher:v2.4.8
+    image: rancher/rancher:v2.5.1
     volumes: 
       - ./rancher:/var/lib/rancher
     expose:
@@ -11,6 +11,7 @@ services:
       - LETSENCRYPT_HOST=<example.com>
       - LETSENCRYPT_EMAIL=<example@gmail.com>
     restart: unless-stopped
+    privileged: true
 
 networks:
   default:
