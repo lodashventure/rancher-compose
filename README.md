@@ -17,7 +17,7 @@
 
 This project for easy create rancher with letsencrypt nginx proxy companion.
 
-## Prerequisites <a name="usage"></a>
+## Prerequisites <a name="prerequisites"></a>
 
 - docker and docker-compose cli is already install.
 
