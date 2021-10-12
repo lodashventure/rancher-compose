@@ -1,8 +1,8 @@
 version: "3.7"
 services:
   rancher:
-    image: rancher/rancher:v2.4.16
-    volumes: 
+    image: rancher/rancher:v2.6.1
+    volumes:
       - ./rancher:/var/lib/rancher
     expose:
       - 80
@@ -17,4 +17,3 @@ networks:
   default:
     external:
       name: nginx-proxy
-
