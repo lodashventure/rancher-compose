@@ -7,9 +7,9 @@ services:
     expose:
       - 80
     environment:
-      - VIRTUAL_HOST=<example.com>
-      - LETSENCRYPT_HOST=<example.com>
-      - LETSENCRYPT_EMAIL=<example@gmail.com>
+      - VIRTUAL_HOST=tidlor.lodashventure.com
+      - LETSENCRYPT_HOST=tidlor.lodashventure.com
+      - LETSENCRYPT_EMAIL=ashi@lodashventure.com
     restart: unless-stopped
     privileged: true
 
